@@ -11,7 +11,7 @@ This was my first experience working with medical imaging data and training mode
 - **Challenge**: [SPR X-Ray Gender Prediction](https://www.kaggle.com/competitions/spr-x-ray-gender)
 - **Dataset**: 22,449 chest X-ray images (10,702 training, 11,747 testing)
 - **Task**: Predict gender from medical images
-- **Frameworks & Libraries**: PyTorch, NumPy, scikit-learn 
+- **Deep Learning Framework**: PyTorch
 - **Development Environment**: Jupyter Notebook
 - **Hardware**: MacBook Pro (13-inch, M1, 2020) using MPS (Apple's Metal Performance Shaders, being Apple GPU architecture)
 - **Outcome**: Validation accuracy of 0.89
