@@ -6,7 +6,7 @@ The challenge was presented by [**Dr. Judy Gichoya (Emory University)**](https:/
 
 This repository contains two versions of the implementation:
 
-- The original version was written in **July 2023**, when I was just getting started with Machine Learning. It represents my early attempt at working with medical imaging data and building CNN models using PyTorch on a Mac M1 GPU. Despite computational limitations, I successfully developed a Convolutional Neural Network (CNN) model and achieved an accuracy of **0.89**. This version can be found in the [`archive/`](archive/) folder.
+- The original version was written in **July 2023**, when I was just getting started with Machine Learning. It represents my early attempt at working with medical imaging data and building CNN models using PyTorch on a Mac M1 GPU. Despite computational limitations, I successfully developed a Convolutional Neural Network (CNN) model and achieved an accuracy of **0.89**. This version can be found in the [`archive/`](Archive/) folder.
 
 - The updated version was completed nearly two years later (**August 2025**), after gaining significant experience in Machine Learning. I revisited and refined the original project, applying better training practices, architecture improvements, and evaluation techniques. The revised implementation and final report can be found in the **[main directory](./)** of this repository. For a quick overview of the final results, please scroll down to the **Results Overview** section of this README file. 
 
@@ -26,12 +26,12 @@ This repository contains two versions of the implementation:
 - `notebook_final.ipynb`: The final version of the notebook, containing the full implementation, updated training pipeline, evaluation metrics, and inference code.
 - `report_final.pdf`: A report summarizing the model development process, tuning experiments, and final results.
 
-- `archive/`: Contains the original version of this project from **July 2023**, including:
+- `Archive/`: Contains the original version of this project from **July 2023**, including:
   - `notebook_archive.ipynb`: The initial notebook developed during the Bumblekite Summer School.
   - `report_archive.pdf`: The original project report documenting early challenges and learning outcomes.
 
 
-- `results/`: Contains the final results:
+- `Results/`: Contains the final results:
   - `predictions_final_lr0.01_epoch20.csv`: Probability scores for the test set, as required by the competition submission format. These scores represent the model's confidence that each image belongs to the male class (1), and are used by the Kaggle platform to compute the AUC metric.
   - `*.png`: Figures generated during training and evaluation (e.g., loss curves, confusion matrix).
 
@@ -60,12 +60,12 @@ Below is the learning curve and the confusion matrix from the final model:
 ### 📉 Learning Curve
 
 The learning curve shows stable convergence:
-![Final Loss Curve](results/final-lr-0.01-dropout-added-epochs-20.png)
+![Final Loss Curve](Results/final-lr-0.01-dropout-added-epochs-20.png)
 
 ### 💡 Confusion Matrix
 
 Since the challenge test labels are hidden, performance was assessed on the validation set. The confusion matrix bellow is based on predictions from the final epoch:
 
-![Confusion Matrix](results/final-confusion-matrix.png)
+![Confusion Matrix](Results/final-confusion-matrix.png)
 
 Despite strong overall performance seen in the evaluation metrics, the model shows slightly lower performance in identifying male images, indicating room for improvement in balancing feature representation across classes.
